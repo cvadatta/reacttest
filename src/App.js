@@ -1,26 +1,58 @@
 import React from 'react';
-import logo from './logo.svg';
+import Hello from './trail/Hello';
+import Json from './trail/Kson';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ class App extends React.Component{
+  async postData(){
+    try{
+      let result=await fetch('https://egov-micro-dev.egovernments.org/egov-mdms-service/v1/_search',{
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+            'Accept':'application/json',
+            'content-type':'application/json',
+        },
+        body: JSON.stringify(
+           {
+             "RequestInfo": {},
+             "MdmsCriteria": {
+               "tenantId": "pb",
+               "moduleDetails": [
+                 {
+                   "moduleName": "tenant",
+                   "masterDetails": [
+                     {
+                       "name": "tenants",
+                       "filter": "$.*.code"
+                     }
+                   ]
+                 }
+               ]
+             }
+           }
+
+        )
+      });
+
+      console.log(result);
+    }
+    catch(e){
+        console.log(e);
+    }
+
+  }
+  render(){
+    return (
+        <div className="App">
+
+          <Hello name="Siva Datta" />
+          <Json />
+          <h1>To Post the Data </h1>
+          <button onClick={()=>this.postData()}>Click Here </button>
+        </div>
+    );
+  }
 }
 
 export default App;
