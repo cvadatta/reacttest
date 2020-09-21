@@ -1,4 +1,5 @@
 import React from 'react';
+//importing js functions
 import Hello from './trail/Hello';
 import Json from './trail/Kson';
 import './App.css';
