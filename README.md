@@ -1,3 +1,12 @@
+## Progress Flow:
+
+$ called functions from js(js files located in trail folder)
+
+$called fetch function directly (postData).
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
