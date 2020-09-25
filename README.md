@@ -4,9 +4,9 @@ $ called functions from js(js files located in trail folder)
 
 $called fetch function directly (postData).
 
-$RunRemoteScriptFile.js gives the facility to run the js files which are not declared in the app//src//...tree ...
+$RunRemoteScriptFile.js((in trail folder) gives the facility to run the js files which are not declared in the app//src//...tree ...
 
-
+$Added java script Files in JAVA-SCRIPT_FILES repo and added RunRemoteServerScriptFile.js(in trail folder) which gives access to run the java script files from the server directly...
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
