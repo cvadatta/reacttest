@@ -8,10 +8,82 @@ $RunRemoteScriptFile.js((in trail folder) gives the facility to run the js files
 
 $Added java script Files in JAVA-SCRIPT_FILES repo and added RunRemoteServerScriptFile.js(in trail folder) which gives access to run the java script files from the server directly...
 
+##How to Run the App:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Got no time? Clone the below repo as shown and get going!**
+
+```git clone https://github.com/rajjeet/react-quick-start
+
+ cd react-quick-start
+ 
+ npm install
+ 
+ npm start
+```
+**Other wiseCreating a very simple React app can be very helpful**
+
+**Step 1: Initialize NPM (Node Package Manager)**
+```
+mkdir new-react-app
+cd new-react-app
+```
+**Step 2: Create React App**
+
+npm also includes a tool called npx, which will run executable packages. What that means is you will run the Create React App code without first downloading the project.
+
+To install the base project, run the following command in cmd:
+```
+npx create-react-app Reacttest
+```
+
+This command will kick off a build process that will download the base code along with a number of dependencies.
+
+When the script finishes you will see a success message that says:
+```
+Success! Created digital-ocean-tutorial at your_file_path/digital-ocean-tutorial
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd digital-ocean-tutorial
+  npm start
+
+Happy hacking!
+```
+
+##OUTPUT/RESULT :
+As the code to get executed is already defined in REACT.JS code,Just simply Running the App will produce the result in the console.
+
+After going in to the project just type "npm start" in the cmd propmt which will give the result of the JS executed in the console(the JS code in server link is already addressed in the code in RunRemoteServerScriptFile.js(in trail folder))
+
+
+
+
+
+
+
+
+
+
+
 
 ## Available Scripts
+
+(This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)).
+
 
 In the project directory, you can run:
 
