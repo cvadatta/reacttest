@@ -3,8 +3,8 @@ import React from 'react';
 import Hello from './trail/Hello';
 import Json from './trail/Kson';
 import './App.css';
-import RunRemoteScriptFile from './trail/RunRemoteScriptFile'
-
+import RunRemoteScriptFile from './trail/RunRemoteScriptFile';
+import RunRemoteServerScriptFile from './trail/RunRemoteServerScriptFile';
 
  class App extends React.Component{
   async postData(){
@@ -57,6 +57,11 @@ import RunRemoteScriptFile from './trail/RunRemoteScriptFile'
 
           <h1>Please submit the javascript file below to execute</h1>
           <RunRemoteScriptFile />
+
+
+          <footer>
+          <RunRemoteServerScriptFile />
+          </footer>
 
         </div>
     );
