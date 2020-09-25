@@ -8,7 +8,7 @@ $RunRemoteScriptFile.js((in trail folder) gives the facility to run the js files
 
 $Added java script Files in JAVA-SCRIPT_FILES repo and added RunRemoteServerScriptFile.js(in trail folder) which gives access to run the java script files from the server directly...
 
-##How to Run the App:
+## How to Run the App:
 
 **Got no time? Clone the below repo as shown and get going!**
 
@@ -64,7 +64,7 @@ We suggest that you begin by typing:
 Happy hacking!
 ```
 
-##OUTPUT/RESULT :
+## OUTPUT/RESULT :
 As the code to get executed is already defined in REACT.JS code,Just simply Running the App will produce the result in the console.
 
 After going in to the project just type "npm start" in the cmd propmt which will give the result of the JS executed in the console(the JS code in server link is already addressed in the code in RunRemoteServerScriptFile.js(in trail folder))
