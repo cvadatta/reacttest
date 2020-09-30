@@ -8,7 +8,7 @@ $RunRemoteScriptFile.js((in trail folder) gives the facility to run the js files
 
 $Added java script Files in JAVA-SCRIPT_FILES repo and added RunRemoteServerScriptFile.js(in trail folder) which gives access to run the java script files from the server directly...
 
-##How to Run the App:
+## How to Run the App:
 
 **Got no time? Clone the below repo as shown and get going!**
 
@@ -64,7 +64,7 @@ We suggest that you begin by typing:
 Happy hacking!
 ```
 
-##OUTPUT/RESULT :
+## OUTPUT/RESULT :
 As the code to get executed is already defined in REACT.JS code,Just simply Running the App will produce the result in the console.
 
 After going in to the project just type "npm start" in the cmd propmt which will give the result of the JS executed in the console(the JS code in server link is already addressed in the code in RunRemoteServerScriptFile.js(in trail folder))
@@ -119,33 +119,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
