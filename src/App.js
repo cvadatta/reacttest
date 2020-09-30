@@ -5,6 +5,7 @@ import Json from './trail/Kson';
 import './App.css';
 import RunRemoteScriptFile from './trail/RunRemoteScriptFile';
 import RunRemoteServerScriptFile from './trail/RunRemoteServerScriptFile';
+import FetchExample from './trail/FetchExample';
 
  class App extends React.Component{
   async postData(){
@@ -51,8 +52,9 @@ import RunRemoteServerScriptFile from './trail/RunRemoteServerScriptFile';
 
           <Hello name="Siva Datta" />
           <Json />
-          <h1>To Post the Data using fetch(click the below button)</h1>
-          <button onClick={()=>this.postData()}>Click Here </button>
+          <button onClick={()=>this.postData()}>Click Here to post on Egovt website </button>
+
+          <FetchExample />
 
 
           <h1>Please submit the javascript file below to execute</h1>
