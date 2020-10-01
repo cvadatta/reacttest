@@ -27,13 +27,21 @@ class FetchExample extends React.Component{
       };
       fetch(urlink,{
         method: 'POST',
+        mode:'no-cors',
         headers: {
           'Accept':'application/json',
           'content-type':'application/json',
         },
         body:JSON.stringify(data)
-      }).then(response => response.json())
+      }).then((resp) => resp.json())
+        .then(function(response) {
+            console.info('fetch()', response);
+            return response;
+        });
+      /*
+      .then(response => response.json())
         .then(ans => console.log(ans));
+      */
     }
     render(){
       return(

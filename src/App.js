@@ -5,7 +5,6 @@ import Json from './trail/Kson';
 import './App.css';
 import RunRemoteScriptFile from './trail/RunRemoteScriptFile';
 import RunRemoteServerScriptFile from './trail/RunRemoteServerScriptFile';
-import FetchExample from './trail/FetchExample';
 
  class App extends React.Component{
   async postData(){
@@ -13,6 +12,7 @@ import FetchExample from './trail/FetchExample';
       let result=await fetch('https://egov-micro-dev.egovernments.org/egov-mdms-service/v1/_search',{
         method: 'POST',
         mode: 'no-cors',
+        credentials: "include",
         headers: {
             'Accept':'application/json',
             'content-type':'application/json',
@@ -51,10 +51,12 @@ import FetchExample from './trail/FetchExample';
         <div className="App">
 
           <Hello name="Siva Datta" />
+
           <Json />
+
           <button onClick={()=>this.postData()}>Click Here to post on Egovt website </button>
 
-          <FetchExample />
+
 
 
           <h1>Please submit the javascript file below to execute</h1>
