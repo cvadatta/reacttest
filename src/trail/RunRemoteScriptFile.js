@@ -6,6 +6,7 @@ function readFileAndEvauluate(event) {
   const text = event.target.result;
   console.log(text);
   eval(text);
+
 }
 
 fr.onload = readFileAndEvauluate;
