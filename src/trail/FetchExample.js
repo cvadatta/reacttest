@@ -1,57 +1,36 @@
 import React from 'react';
-class FetchExample extends React.Component{
-    constructor(){
-        super();
-        this.state={}
-    }
 
-    submit()
-    {
-      let urlink='https://egov-micro-dev.egovernments.org/egov-mdms-service/v1/_search';
-      let data = {
-                    "RequestInfo": {},
-                    "MdmsCriteria": {
-                      "tenantId": "pb",
-                      "moduleDetails": [
-                        {
-                          "moduleName": "tenant",
-                          "masterDetails": [
-                            {
-                              "name": "tenants",
-                              "filter": "$.*.code"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-      };
-      fetch(urlink,{
-        method: 'POST',
-        mode:'no-cors',
-        headers: {
-          'Accept':'application/json',
-          'content-type':'application/json',
-        },
-        body:JSON.stringify(data)
-      }).then((resp) => resp.json())
-        .then(function(response) {
-            console.info('fetch()', response);
-            return response;
-        });
-      /*
-      .then(response => response.json())
-        .then(ans => console.log(ans));
-      */
-    }
-    render(){
-      return(
-        <div>
+class FetchExample extends React.Component {
+  componentDidMount() {
+    let data = {
 
-        <h1>Post Api example</h1>
-        <button onClick={()=>{this.submit()}}>Submit Data</button>
+          "RequestInfo": {},
+          "MdmsCriteria": {
+            "tenantId": "pb",
+            "moduleDetails": [
+              {
+                "moduleName": "tenant",
+                "masterDetails": [
+                  {
+                    "name": "tenants",
+                    "filter": "$.*.code"
+                  }
+                ]
+              }
+            ]
+          }
 
-        </div>
-      );
     }
+    fetch('https://egov-micro-dev.egovernments.org/egov-mdms-service/v1/_search', {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {"Content-type": "application/json; charset=UTF-8"}
+    })
+    .then(response => response.json())
+    .then(json => console.log(json));
+  }
+  render() {
+    return <h1>my Component has Mounted, Check the browser 'console' </h1>;
+  }
 }
 export default FetchExample;
